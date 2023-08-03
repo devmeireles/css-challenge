@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Lato', sans-serif;
+    }
+
+    body {
+      background: url('./images/pattern-background-desktop.svg') top/100% no-repeat, #e0e8ff;
+    }
+  </style>
+</head>
+
+<body class="w-full h-screen flex flex-col bg-[#f9f4e8] px-6 md:px-28">
+  <nav class="nav w-full py-12 flex flex-row justify-between">
+    <div class="nav_logo flex flex-row gap-x-6">
+      <div>
+        <img src="./images/Logo.svg" alt="logo" />
+      </div>
+
+      <div>
+        <a href="#"
+          class="text-white text-sm font-bold bg-gradient-to-r from-yellow-400 to-red-600 px-4 py-2 rounded-3xl">Hostter
+          is Hiring</a>
+      </div>
+    </div>
+
+    <div class="nav_menu hidden md:block">
+      <ul class="text-gray-700 font-normal flex flex-row gap-6">
+        <li>
+          <a href="#">Plans</a>
+        </li>
+
+        <li>
+          <a href="#">Find Domain</a>
+        </li>
+
+        <li>
+          <a href="#">Why Hostter</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav_action md:flex md:flex-row gap-4 hidden">
+      <div>
+        <a href="#" class="text-gray-700 font-normal">Sign In</a>
+      </div>
+
+      <div>
+        <a href="#" class="text-white font-normal bg-sky-600 rounded-md p-4">Join Waitlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content flex flex-col-reverse md:flex-row gap-6 items-center">
+    <div class="content__cta w-full md:w-10/12">
+      <div class="cta__heading">
+        <h1 class="text-6xl">Host your website in less than 5 minutes.</h1>
+        <p class="pt-6 text-gray-600">With Hostter, get your website up and running in no less than 5 minutes with the
+          most competitive pricing packages available online.</p>
+      </div>
+
+      <div class="cta__form flex flex-col md:flex-row items-center gap-6 pt-6">
+        <input type="email" name="email" placeholder="Enter e-mail address"
+          class="bg-white rounded-lg w-full md:w-8/12 h-16 pl-[14px]" />
+        <a href="#" class="text-white font-normal bg-sky-600 rounded-md p-5 h-16 w-full md:w-4/12 text-center">Join Waitlist</a>
+      </div>
+
+      <div class="cta__notify flex flex-row pt-8 gap-x-2">
+        <div>
+          <img src="./images/Checkmark.svg" />
+        </div>
+        <div>
+          <p class="text-gray-600 text-sm">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__image flex justify-center">
+      <img src="./images/Hero Image (Model).png" class="w-9/12" />
+    </div>
+  </div>
+
+  <div class="footer flex flex-col md:flex-row justify-between items-start md:items-center py-16 md:py-28">
+    <div class="footer__social">
+      <ul class="text-gray-700 font-normal flex flex-row gap-6">
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__chat flex flex-row items-center pt-6 md:pt-0 gap-3">
+      <div class="chat__avatar">
+        <img src="./images/Help Avatar.svg" />
+      </div>
+
+      <div class="chat__message leading-5">
+        <p>Have any questions?</p>
+        <p class="font-bold">Talk to a specialist</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
