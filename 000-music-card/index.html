@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Lato', sans-serif;
+    }
+
+    body {
+      background: url('./images/pattern-background-desktop.svg') top/100% no-repeat, #e0e8ff;
+    }
+  </style>
+</head>
+
+<body class="w-full h-screen flex items-center justify-center">
+  <div class="card min-h-[500px] w-80 rounded-lg bg-white shadow-lg">
+    <div class="card__header">
+      <img class="rounded-t-lg" src="./images/illustration-hero.svg" />
+    </div>
+
+    <div class="card__body text-center px-6 pt-6">
+      <h1 class="text-slate-700 font-bold text-lg pb-2">Order Summary</h1>
+      <p class="text-zinc-600 text-sm leading-5">You can now listen to millions of songs, audiobooks, and podcasts on
+        any device anywhere you like!</p>
+
+      <div
+        class="card__plan w-full h-fit bg-slate-100 text-sm rounded-xl flex flex-row items-center justify-between px-3 py-2 my-4">
+        <div class="plan__icon">
+          <img class="w-8" src="./images/icon-music.svg" />
+        </div>
+        <div class="plan__name flex-col">
+          <div>
+            <p class="font-semibold text-slate-700">Annual Plan</p>
+          </div>
+          <div>
+            <p class="text-zinc-600 text-sm">$59.99/year </p>
+          </div>
+        </div>
+        <div class="plan__action">
+          <p class="underline text-sky-700 text-xs">Change</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card__action flex flex-col items-center gap-y-3 pt-3">
+      <button type="button"
+        class="bg-blue-700 w-fit px-14 py-2 rounded-lg text-white text-sm font-semibold shadow-blue-200 shadow-lg">Proceed
+        to Payment</button>
+      <button type="button" class="text-zinc-500 w-fit px-14 py-2 text-sm font-semibold">Cancel Order</button>
+    </div>
+  </div>
+</body>
+
+</html>
